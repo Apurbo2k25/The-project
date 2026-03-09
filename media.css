@@ -1,0 +1,516 @@
+@media (max-width: 1440px) {
+    .Booking-Services {
+        gap: 15px;
+    }
+    .left {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .navbar {
+        font-size: 20px; /* Smaller text for small screens */
+        gap: 15px;
+    }
+    .left-hand {
+        
+        margin-left: 50px; /* Reduced from 250px */
+    }
+    
+    .right-hand {
+        margin-right: 50px; /* Reduced from 250px */
+    }
+
+    .first, .second {
+        font-size: 35px; /* Slightly smaller text */
+    }
+
+    .right-hand img {
+        width: 100%; /* Ensure image stays visible */
+        max-width: 400px;
+    }
+    main{
+        margin-bottom: 20px;
+    
+    }
+    .section-achievements {
+      
+        font-size: 0.8rem;
+    }
+    .contents {
+       font-size: 0.5 rem;
+        gap: 30px; /* Space between the numbers */
+    }
+
+    .left {
+        width: 50%;       /* Use percentage */
+        max-width: 500px; /* Limits size on big screens */
+    }
+    .right{
+        width: 40%;
+    }
+    .total {
+       
+        font-size: 1.2rem;
+        margin-top: -25px ;
+        gap: 120px;
+        
+    }
+    .total span:last-child {
+        width: 80px;         /* Give enough space for ₹9999 */
+        text-align: right;   /* Keep the numbers aligned to the edge */
+        display: inline-block;
+    }
+    #empty-row p {
+        margin: 10px 0 0 10px; /* Removes default large margins that push it away */
+        max-width: 340px;   /* Keeps text neat and centered */
+    }
+    .service-list {
+        
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .Booking-Services {
+        gap: 15px;
+    }
+    .left {
+        max-width: 600px;
+    }
+   
+    .service-list {
+        
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    
+    .right {
+        height: auto; /* Allow height to adjust */
+    }
+   
+    .btn-action {
+        gap: 5px;
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+       
+    }
+    .total {
+       
+        font-size: 1.2rem;
+        margin-top: -25px ;
+        gap: 80px;
+        
+    }
+    .total span:last-child {
+        width: 80px;         /* Give enough space for ₹9999 */
+        text-align: right;   /* Keep the numbers aligned to the edge */
+        display: inline-block;
+    }
+    #empty-row p {
+        margin: 10px 0 0 10px; /* Removes default large margins that push it away */
+        max-width: 400px;   /* Keeps text neat and centered */
+    }
+    .Booking-Services {
+        flex-direction: row; /* Stack Service List and Cart */
+        /* align-items: center; */  
+    }
+    .subscribe h1 {
+        font-size: 40px;
+    }    
+}
+
+
+
+@media (max-width: 912px) {
+    main{
+        margin-bottom: 70px;
+    }
+    .button{
+        font-size: 20px;
+       
+      padding: 8px 16px;
+      width: 200px;
+      text-decoration: none;
+        height: 40px;
+    }
+    .contents {
+      
+         gap: 15px; /* Space between the numbers */
+     }
+     .total {
+       
+        font-size: 1.1rem;
+        margin-top: -25px ;
+        gap: 60px;
+    }
+
+    .features-section {
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .subscribe {
+        /* margin-top: 20px; */
+        gap: 30px;             
+        padding: 40px;
+    }
+    .subscribe h1 {
+        font-size: 32px;
+    }
+    .subscribe input {
+        padding: 15px;
+        width: 150px;
+       
+    }
+    .subs-button {
+        padding: 10px 40px;
+    }
+    .feature-item {
+        /* calc(50% - gap) ensures two items fit perfectly side-by-side */
+        flex: 0 0 calc(50% - 20px); 
+    }
+
+    .feature-icon img {
+        width: 50px; /* Shrink icons slightly for mobile */
+        height: auto;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .feature-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* 2. MOBILE PHONES (Screens smaller than 768px) */
+/* RESPONSIVE: HEADER & HERO */
+@media (max-width: 768px) {
+    /* 1. Header Adjustment */
+    header {
+        flex-direction: flex; 
+        /* padding: 20px; */
+        /* gap: 20px; */
+    }
+    .navbar {
+        font-size: 14px; /* Smaller text for small screens */
+        gap: 9px;
+    }
+    .logo{
+        height: 45px;
+        width: 45px;
+    }
+    .username {
+        width: 90px; /* Slimmer button */
+        height: 35px;
+        font-size: 12px;
+    }
+
+    /* 2. Main/Hero Section Adjustment */
+    main {
+        flex-direction: flex; /* Stack image and text */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .left-hand, .right-hand {
+        margin: 0; /* Remove that 250px margin! */
+        padding: 10px;
+        width: 90%;
+    }
+
+    .first, .second {
+        font-size: 28px; /* Shrink headings */
+    }
+
+    p {
+        margin: 20px auto; /* Center the paragraph */
+        text-align: center;
+    }
+
+    .button{
+        font-size: 18px;
+       
+      padding: 2px 14px;
+      width: 180px;
+      text-decoration: none;
+    
+        height: 35px;
+       
+    }
+
+    .right-hand img {
+        max-width: 100%;
+        height: auto;
+    }
+        .section-achievements {
+            flex-direction: column; /* Stack numbers vertically on mobile */
+            gap: 20px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .Booking-Services {
+             /* Stack Service List and Cart */
+            align-items: center;
+        }
+    
+        .left, .right {
+            width: 90%;
+            max-width: 100%;
+            height: auto;
+        }
+       
+        .service-list {
+            font-size: 20px; /* Shrink list text */
+        }
+        #empty-row p {
+            margin: 10px 15px 0 32px; /* Removes default large margins that push it away */
+            max-width: 500px;   /* Keeps text neat and centered */
+        }
+    
+        .left li {
+            padding: 12px;
+            flex-direction: column; /* Stack service name above button */
+            gap: 10px;
+            text-align: center;
+        }
+        .total {
+       
+            font-size: 1.1rem;
+            margin: -25px 10px 0px 10px;
+            gap: 20px;
+            
+        }
+        .item-first {
+           
+            font-size: 1.5rem;
+          
+        }
+    
+        .btn-action {
+            width: 90%; /* Full width buttons for easy tapping */        
+        }
+    
+        .total {
+            gap: 20px;
+            justify-content: space-between;
+        }
+    
+        .feature-item {
+            /* calc(50% - gap) ensures two items fit perfectly side-by-side */
+            flex: 0 0 calc(50% - 20px); 
+        }
+    
+        .feature-icon img {
+            width: 45px; /* Shrink icons slightly for mobile */
+            height: auto;
+        }
+    
+        .feature-title {
+            font-size: 1.1rem;
+        }
+    
+        .feature-text {
+            font-size: 14px;
+        }
+        .subscribe {
+            /* margin-top: 20px; */
+            gap: 20px;             
+            padding: 30px;
+        }
+        .subscribe h1 {
+            font-size: 28px;
+        }
+        .subscribe input {
+            padding: 12px;
+            width: 120px;
+           
+        }
+        .subs-button {
+            padding: 10px 40px;
+        }
+
+        .footer-container {
+        
+            gap: 20px;
+            padding: 0 10px;
+        }
+        
+        .logo2 {
+            margin: 5px 0px 0px 10px; 
+            height: 65px;      /* Set the height of the container */
+            width: 65px;       /* Set the width of the container */
+        }
+        .footer-heading {
+            font-size: 14px;
+           
+        }
+        .social-icons {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .social-icons ion-icon {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+}
+
+
+
+
+/* 3. SMALL PHONES (Screens smaller than 480px) */
+@media (max-width: 480px) {
+    /* 1. Header & Nav */
+    header {
+        padding: 15px;
+        display: flex;
+        flex-direction: column; /* Stack logo on top of menu */
+        align-items: center;    /* Center everything horizontally */
+        gap: 15px;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        font-size: 17px; 
+        gap: 17px;
+        padding: 0;
+    }
+
+    .username {
+        width: 100px; /* Slimmer button */
+        height: 40px;
+        font-size: 15px;
+    }
+
+
+    /* 2. Main Hero Section */
+    main {
+        flex-direction: column; /* Stack vertically for readability */
+        margin-top: 10px;
+        margin-bottom: 35px;
+        padding: 0;
+    }
+
+    .left-hand{
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .first, .second {
+        font-size: 32px; /* Optimized for small width */
+        line-height: 1.1;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .button {
+        width: 100%; /* Full width button is easier to tap */
+        max-width: 220px;
+        font-size: 16px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .right-hand {
+        display: none;
+    }
+
+    /* 3. Achievements */
+    .section-achievements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    /* Center the numbers/text */
+        text-align: center;
+        gap: 25px;              /* More space between items when stacked */
+        padding: 40px 20px;     /* Cleaned up the uneven padding */
+    }
+
+    /* 2. Subscribe Section */
+    .subscribe {
+        display: flex;
+        flex-direction: column; /* Stack H1, Input, and Button */
+        align-items: center;
+        gap: 15px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .subscribe h1 {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    /* Make the input and button full-width for easy mobile use */
+    .subscribe input {
+        width: 100%;           /* Changed from 100px to fill the screen */
+        max-width: 300px;      /* Prevents it from getting TOO wide */
+        padding: 12px;
+        font-size: 16px;       /* Prevents iOS zoom-on-focus */
+        border-radius: 8px;
+    }
+
+    .subs-button {
+        width: 100%;           /* Full width button for thumbs */
+        max-width: 400px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .footer-container {
+       
+        margin-right: 50px;
+        
+    }
+
+    .footer-container {
+        
+        gap: 10px;
+        padding: 0 10px;
+    }
+    
+    .logo2 {
+        display: none;
+    }
+    .footer-heading {
+        font-size: 14px;
+    
+    }
+    .social-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+        gap: 5px;      /* Space between icons */  
+    }
+    .social-icons ion-icon {
+        font-size: 16px;
+    }
+    .footer-subtitle {
+        font-size: 14px;
+    
+    }
+}

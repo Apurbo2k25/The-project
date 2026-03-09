@@ -4,9 +4,13 @@
     font-family: sans-serif;
 
 }
-html {
+html,body {
     scroll-behavior: smooth;
-  }
+  
+  
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 header {
     display: flex;
@@ -50,7 +54,7 @@ header {
     width: 100%; /* Expands to full width on hover */
 }
 .logo {
-    margin-left: 80px; 
+    
     height: 70px;      /* Set the height of the container */
     width: 70px;       /* Set the width of the container */
 }
@@ -150,17 +154,18 @@ p{
     align-items: center; /* Vertically centers them */
     justify-content: space-around; /* Spreads them across the width */
     background-color: #3A9AFF;
-    height: 120px;
-    padding: 0 50px;
+    min-height: 120px;
+   
     color: #333333;
     font-size: 1.1rem;
+    box-sizing: border-box;
 }
 .section-achievements p{
     color: #222;
 }
 .contents li:not(:first-child) {
     border-left: 0.2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-    padding-left: 40px; /* Space after the line */
+        padding-left: 10px; /* Space after the line */
 }
 
 .contents li {
@@ -217,9 +222,9 @@ p{
     
     flex-direction: column;
 }
-.left{
-    width: 750px;
-    
+.left {
+    width: 90%;       /* Use percentage */
+    max-width: 750px; /* Limits size on big screens */
 }
 
 .left-first{
@@ -456,6 +461,7 @@ table th:last-child { width: 80px; }
 
 .features-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     padding: 40px;
@@ -569,7 +575,7 @@ table th:last-child { width: 80px; }
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
     padding: 0 20px;
 }
 
