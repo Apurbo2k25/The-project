@@ -10,7 +10,7 @@
 
 @media (max-width: 1200px) {
     .navbar {
-        font-size: 20px; /* Smaller text for small screens */
+        font-size: 20px; 
         gap: 15px;
     }
     .left-hand {
@@ -23,11 +23,11 @@
     }
 
     .first, .second {
-        font-size: 35px; /* Slightly smaller text */
+        font-size: 35px; 
     }
 
     .right-hand img {
-        width: 100%; /* Ensure image stays visible */
+        width: 100%; 
         max-width: 400px;
     }
     main{
@@ -40,11 +40,11 @@
     }
     .contents {
        font-size: 0.5 rem;
-        gap: 30px; /* Space between the numbers */
+        gap: 30px;
     }
 
     .left {
-        width: 50%;       /* Use percentage */
+        width: 50%;       
         max-width: 500px; /* Limits size on big screens */
     }
     .right{
@@ -88,7 +88,7 @@
     }
     
     .right {
-        height: auto; /* Allow height to adjust */
+        height: auto;
     }
    
     .btn-action {
@@ -116,8 +116,8 @@
         max-width: 400px;   /* Keeps text neat and centered */
     }
     .Booking-Services {
-        flex-direction: row; /* Stack Service List and Cart */
-        /* align-items: center; */  
+        flex-direction: row; 
+
     }
     .subscribe h1 {
         font-size: 40px;
@@ -155,7 +155,7 @@
     }
     
     .subscribe {
-        /* margin-top: 20px; */
+
         gap: 30px;             
         padding: 40px;
     }
@@ -176,7 +176,7 @@
     }
 
     .feature-icon img {
-        width: 50px; /* Shrink icons slightly for mobile */
+        width: 50px;
         height: auto;
     }
 
@@ -195,11 +195,10 @@
 /* 2. MOBILE PHONES (Screens smaller than 768px) */
 /* RESPONSIVE: HEADER & HERO */
 @media (max-width: 768px) {
+
     /* 1. Header Adjustment */
     header {
         flex-direction: flex; 
-        /* padding: 20px; */
-        /* gap: 20px; */
     }
     .navbar {
         font-size: 14px; /* Smaller text for small screens */
@@ -223,7 +222,7 @@
     }
 
     .left-hand, .right-hand {
-        margin: 0; /* Remove that 250px margin! */
+        margin: 0; 
         padding: 10px;
         width: 90%;
     }
@@ -259,7 +258,6 @@
             text-align: center;
         }
         .Booking-Services {
-             /* Stack Service List and Cart */
             align-items: center;
         }
     
@@ -347,8 +345,8 @@
         
         .logo2 {
             margin: 5px 0px 0px 10px; 
-            height: 65px;      /* Set the height of the container */
-            width: 65px;       /* Set the width of the container */
+            height: 65px;      
+            width: 65px;      
         }
         .footer-heading {
             font-size: 14px;
@@ -403,7 +401,7 @@
 
     /* 2. Main Hero Section */
     main {
-        flex-direction: column; /* Stack vertically for readability */
+        flex-direction: column; 
         margin-top: 10px;
         margin-bottom: 35px;
         padding: 0;
@@ -416,7 +414,7 @@
     }
 
     .first, .second {
-        font-size: 32px; /* Optimized for small width */
+        font-size: 32px; 
         line-height: 1.1;
     }
 
@@ -428,7 +426,7 @@
     }
 
     .button {
-        width: 100%; /* Full width button is easier to tap */
+        width: 100%; 
         max-width: 220px;
         font-size: 16px;
         height: 45px;
@@ -440,13 +438,16 @@
     }
 
     /* 3. Achievements */
-    .section-achievements {
-        display: flex;
-        flex-direction: column;
-        align-items: center;    /* Center the numbers/text */
-        text-align: center;
-        gap: 25px;              /* More space between items when stacked */
-        padding: 40px 20px;     /* Cleaned up the uneven padding */
+    .section-achievements {    
+        padding: 40px 20px ;  
+    }
+    .contents li {
+        padding-right: 30px;
+    }
+    .contents {
+      
+        gap: 10px;
+        
     }
 
     /* 2. Subscribe Section */
@@ -465,17 +466,16 @@
         margin-bottom: 10px;
     }
 
-    /* Make the input and button full-width for easy mobile use */
     .subscribe input {
-        width: 100%;           /* Changed from 100px to fill the screen */
-        max-width: 300px;      /* Prevents it from getting TOO wide */
+        width: 100%;           
+        max-width: 300px;     
         padding: 12px;
-        font-size: 16px;       /* Prevents iOS zoom-on-focus */
+        font-size: 16px;      
         border-radius: 8px;
     }
 
     .subs-button {
-        width: 100%;           /* Full width button for thumbs */
+        width: 100%;         
         max-width: 400px;
         padding: 12px;
         font-size: 16px;

@@ -64,17 +64,17 @@ buttons.forEach((btn) => {
 });
 
 // --- BOOKING LOGIC ---
-// 1. Update the selectors to match your new IDs
+// 1. Update the selectors to match my new IDs
 const bookBtn = document.querySelector('.btn-book');
 const errorDisplay = document.getElementById('error-mssg');
 
 bookBtn.addEventListener('click', () => {
-    // 2. Get Input Values using your NEW IDs
+    // 2. Get Input Values using my NEW IDs
     const name = document.getElementById('full-name').value.trim();
     const email = document.getElementById('the-email').value.trim();
     const phone = document.getElementById('phone').value.trim();
     
-    // 3. Check if cart is empty (using your existing cartBody variable)
+    // 3. Check if cart is empty (using my existing cartBody variable)
     const isCartEmpty = cartBody.querySelector('#empty-row') || cartBody.children.length === 0;
 
     // 4. Validation Logic
@@ -115,7 +115,7 @@ if (isCartEmpty || name === "" || !isEmailValid || !isPhoneValid) {
         // First Timeout: Simulate the 1.5s "Email Sending" process
         setTimeout(() => {
             const displayEmail = document.getElementById('display-email');
-            const successDisplay = document.getElementById('success-mssg'); // Matches your HTML ID
+            const successDisplay = document.getElementById('success-mssg'); 
     
             if (displayEmail) displayEmail.innerText = email;
             if (successDisplay) successDisplay.style.display = 'block';

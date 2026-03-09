@@ -26,7 +26,7 @@ header {
 }
 
 .navbar li {
-    position: relative; /* Required for the underline positioning */
+    position: relative; 
     cursor: pointer;
     font-weight: 500;
     padding: 5px 0;
@@ -41,7 +41,7 @@ header {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #3A9AFF; /* Matches your theme blue */
+    background-color: #3A9AFF; /* Matches my theme blue */
     transition: width 0.3s ease-in;
 }
 
@@ -60,9 +60,9 @@ header {
 }
 
 .logo img {
-    height: 100%;      /* Make the image fill the 50px height */
-    width: 100%;       /* Make the image fill the 50px width */
-    object-fit: contain; /* Ensures the logo isn't stretched or squashed */
+    height: 100%;      
+    width: 100%;       
+    object-fit: contain;
 }
 .navbar {
     list-style: none;
@@ -74,17 +74,17 @@ header {
 }
 
 .username {
-    font-size: 18px; /* Slightly smaller for better proportions */
-    font-weight: 600; /* Makes text clearer */
+    font-size: 18px;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 160px;
     height: 60px;
-    border-radius: 50px; /* Standard pill shape */
+    border-radius: 50px;
     border: none; /* Removes the ugly default button border */
     background-color: #E3F2FD; /* Lighter, cleaner blue from your image */
-    color: #3A9AFF; /* Matches your subscribe section blue */
+    color: #3A9AFF; /* Matches our subscribe section blue */
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth transition for hover */
 }
@@ -185,24 +185,6 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Booking-Services {
     display: flex;
     justify-content: center;
@@ -223,8 +205,8 @@ p{
     flex-direction: column;
 }
 .left {
-    width: 90%;       /* Use percentage */
-    max-width: 750px; /* Limits size on big screens */
+    width: 90%;       
+    max-width: 750px; 
 }
 
 .left-first{
@@ -233,27 +215,22 @@ p{
 }
 
 .right {
-    height: 700px; /* Lock the total height to match the left side */
+    height: 700px; 
     display: flex;
     flex-direction: column;
     overflow: hidden; /* Prevents anything from pushing outside this box */
-    /* width: 400px; */
 }
 
 .part1 {
     flex: 1; /* Takes up available space but stays within .right */
     display: flex;
     flex-direction: column;
-    min-height: 300px; /* Important: allows the div to shrink/scroll instead of growing */
+    min-height: 300px; 
 }
-
-
-
 
 .part2{
     margin-top: 5px;
 }
-
 
 
 /* Typography & Lists */
@@ -334,6 +311,8 @@ th { background-color: #f8f9fa; }
 table th:first-child { width: 40px; text-align: center; }
 table th:last-child { width: 80px; }
 
+
+
 /* Form Elements */
 .book-now label {
     display: block;
@@ -347,8 +326,6 @@ table th:last-child { width: 80px; }
     margin-bottom: 10px;
 
 }
-
-
 .book-now input {
     width: 100%;
     margin-bottom: 15px;
@@ -358,7 +335,6 @@ table th:last-child { width: 80px; }
     box-sizing: border-box;
     height: 50px;
 }
-
 .book-now .row {
     margin-top: 5px;
     display: flex;
@@ -413,17 +389,16 @@ table th:last-child { width: 80px; }
 .item-info {
     display: flex;
     align-items: center;
-    gap: 8px; /* Controls the spacing around the dot */
+    gap: 8px; 
 }
 
 
 #empty-row p {
-    margin: 10px 0 0 32px; /* Removes default large margins that push it away */
-    max-width: 350px;   /* Keeps text neat and centered */
+    margin: 10px 0 0 32px;
+    max-width: 350px;
 }
 
 
-/* The 'active' state for the button */
 .btn-add.active {
     background-color: #ffe5e5 !important;
     color: #d9534f !important;
@@ -435,28 +410,6 @@ table th:last-child { width: 80px; }
 .success{
     display: none; color: #28a745; margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .features-section {
@@ -471,11 +424,11 @@ table th:last-child { width: 80px; }
 .feature-item {
     flex: 1;
     text-align: center;
-    max-width: 250px; /* Optional: limits column width for readability */
+    max-width: 250px; 
 }
 
 .feature-icon img {
-    width: 60px; /* Adjust size based on your icon files */
+    width: 60px; 
     height: auto;
     margin-bottom: 20px;
 }
@@ -560,15 +513,15 @@ table th:last-child { width: 80px; }
     background-color: #f0f0f0;
 }
 
+
+
+
 .main-footer {
     background-color: #f8f9fa; /* Light grey background from image */
     padding: 60px 0;
     font-family: sans-serif;
     color: #333;
 }
-
-
-
 
 .footer-container {
     max-width: 1200px;
@@ -586,14 +539,14 @@ table th:last-child { width: 80px; }
 /* Logo Section */
 .logo2 {
     margin: 5px 0px 0px 40px; 
-    height: 120px;      /* Set the height of the container */
-    width: 120px;       /* Set the width of the container */
+    height: 120px;     
+    width: 120px;       
 }
 
 .logo2 img {
-    height: 100%;      /* Make the image fill the 50px height */
-    width: 100%;       /* Make the image fill the 50px width */
-    object-fit: contain; /* Ensures the logo isn't stretched or squashed */
+    height: 100%;      
+    width: 100%;      
+    object-fit: contain; 
 }
 
 .footer-subtitle {
