@@ -1,0 +1,658 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar li {
+    position: relative; /* Required for the underline positioning */
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+/* The bluish line */
+.navbar li::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Starts at zero width */
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3A9AFF; /* Matches your theme blue */
+    transition: width 0.3s ease-in;
+}
+
+/* Hover effect */
+.navbar li:hover {
+    color: #3A9AFF;
+}
+
+.navbar li:hover::after {
+    width: 100%; /* Expands to full width on hover */
+}
+.logo {
+    margin-left: 80px; 
+    height: 70px;      /* Set the height of the container */
+    width: 70px;       /* Set the width of the container */
+}
+
+.logo img {
+    height: 100%;      /* Make the image fill the 50px height */
+    width: 100%;       /* Make the image fill the 50px width */
+    object-fit: contain; /* Ensures the logo isn't stretched or squashed */
+}
+.navbar {
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    gap: 30px;
+    font-weight:100;
+    color: #708090;
+}
+
+.username {
+    font-size: 18px; /* Slightly smaller for better proportions */
+    font-weight: 600; /* Makes text clearer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    border-radius: 50px; /* Standard pill shape */
+    border: none; /* Removes the ugly default button border */
+    background-color: #E3F2FD; /* Lighter, cleaner blue from your image */
+    color: #3A9AFF; /* Matches your subscribe section blue */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+   
+    /* height: calc(100vh - 80px); */
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+}
+
+.left-hand{
+    margin-left: 250px;
+}
+.right-hand{
+    margin-right: 250px;
+}
+.first{
+    color:#1A3263;
+    font-size: 45px;
+}
+.second{
+    color:#3A9AFF;
+    font-size: 45px;
+}
+p{
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #777;
+    margin: 20px 0;
+    text-align: justify;
+    
+  }
+.button{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding: 8px 16px;
+  width: 250px;
+  text-decoration: none;
+
+    height: 50px;
+    border-radius: 9999px;
+    background-color: #3A9AFF;
+    color: white;
+}
+  
+  img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   
+}
+
+/* Secion Part */
+
+.section-achievements {
+    display: flex;
+    align-items: center; /* Vertically centers them */
+    justify-content: space-around; /* Spreads them across the width */
+    background-color: #3A9AFF;
+    height: 120px;
+    padding: 0 50px;
+    color: #333333;
+    font-size: 1.1rem;
+}
+.section-achievements p{
+    color: #222;
+}
+.contents li:not(:first-child) {
+    border-left: 0.2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    padding-left: 40px; /* Space after the line */
+}
+
+.contents li {
+    padding-right: 40px; /* Space before the line */
+    text-align: center;
+}
+.contents {
+    display: flex;
+    list-style: none;
+    gap: 80px; /* Space between the numbers */
+    margin: 0;
+    padding: 0;
+    
+}
+.contents h2, .contents p {
+    margin: 0; /* Tightens the gap between 15+ and text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Booking-Services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f4f7f9;
+    padding: 40px 20px; /* Reduced side padding for smaller screens */
+    flex-wrap: wrap; 
+}
+
+/* Shared Box Styles */
+.left, .part1, .part2 {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display:flex ;
+    
+    flex-direction: column;
+}
+.left{
+    width: 750px;
+    
+}
+
+.left-first{
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.right {
+    height: 700px; /* Lock the total height to match the left side */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents anything from pushing outside this box */
+    /* width: 400px; */
+}
+
+.part1 {
+    flex: 1; /* Takes up available space but stays within .right */
+    display: flex;
+    flex-direction: column;
+    min-height: 300px; /* Important: allows the div to shrink/scroll instead of growing */
+}
+
+
+
+
+.part2{
+    margin-top: 5px;
+}
+
+
+
+/* Typography & Lists */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.left li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.price, .footer-note { 
+    color: #007bff; 
+    font-weight: 600;
+}
+
+/* Action Buttons */
+.btn-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 140px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    background: none;
+}
+
+.btn-add { border: 1px solid #28a745; color: #28a745; }
+.btn-add:hover { background: #28a745; color: white; }
+
+.btn-remove { border: 1px solid #ff4d4d; color: #ff4d4d; }
+.btn-remove:hover { background: #ff4d4d; color: white; }
+
+/* Right Section Containers */
+.added-items, .book-now {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    /* padding: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+.item-first {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 130%;
+    color:#333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-bottom: 15px; */
+}
+
+th, td {
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+th { background-color: #f8f9fa; }
+
+/* Column Widths */
+table th:first-child { width: 40px; text-align: center; }
+table th:last-child { width: 80px; }
+
+/* Form Elements */
+.book-now label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+.book-now h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.book-now input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0px 0px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.book-now .row {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer & Final Buttons */
+.total {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: -25px ;
+    gap: 150px;
+    
+}
+.total span:last-child {
+    width: 80px;         /* Give enough space for ₹9999 */
+    text-align: right;   /* Keep the numbers aligned to the edge */
+    display: inline-block;
+}
+
+.btn-book {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-book:hover {
+    background-color: #0056b3;
+}
+
+/* Empty State Handling */
+#empty-row td {
+    text-align: center;
+    /* padding: 40px 10px; */
+}
+
+#empty-row img {
+    width: 50px;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    height: 130px;
+}
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Controls the spacing around the dot */
+}
+
+
+#empty-row p {
+    margin: 10px 0 0 32px; /* Removes default large margins that push it away */
+    max-width: 350px;   /* Keeps text neat and centered */
+}
+
+
+/* The 'active' state for the button */
+.btn-add.active {
+    background-color: #ffe5e5 !important;
+    color: #d9534f !important;
+    border: 1px solid #d9534f !important;
+}
+.error{
+    color: #d9534f; margin-top: 10px; display: none;
+}
+.success{
+    display: none; color: #28a745; margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+}
+
+.feature-item {
+    flex: 1;
+    text-align: center;
+    max-width: 250px; /* Optional: limits column width for readability */
+}
+
+.feature-icon img {
+    width: 60px; /* Adjust size based on your icon files */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #777; /* Lighter grey for description text */
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.subscribe {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the whole block */
+    gap: 50px;               /* Space between Text and Inputs */
+    background-color: #3A9AFF;
+    padding: 60px;
+    color: white;
+}
+
+.subscribe h1 {
+    font-size: 45px;
+    text-align: left;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Groups inputs and button together */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns button to the left of this group */
+    gap: 15px;
+}
+
+.input-group2 {
+    display: flex;
+    gap: 15px;
+}
+
+.subscribe input {
+    padding: 15px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent like image */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+}
+
+.input-group2 input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.subs-button {
+    padding: 15px 60px;
+    color: #3A9AFF;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subs-button:hover {
+    background-color: #f0f0f0;
+}
+
+.main-footer {
+    background-color: #f8f9fa; /* Light grey background from image */
+    padding: 60px 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+/* Logo Section */
+.logo2 {
+    margin: 5px 0px 0px 40px; 
+    height: 120px;      /* Set the height of the container */
+    width: 120px;       /* Set the width of the container */
+}
+
+.logo2 img {
+    height: 100%;      /* Make the image fill the 50px height */
+    width: 100%;       /* Make the image fill the 50px width */
+    object-fit: contain; /* Ensures the logo isn't stretched or squashed */
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Headings */
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 2px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+/* Contact & Socials */
+.footer-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons ion-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons ion-icon:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+

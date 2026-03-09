@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundrymark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/logo1.png" alt="cloth-stack"></div>
+        
+            <ul class="navbar">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <div class="username">Username</div>
+    </header>
+
+    <main>
+        <div class="left-hand">
+            <h1 class="first">Revitalize Your <br>Clothes with Experts</h1>
+            <h1 class="second">Laundry Services!</h1>
+            <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. 
+                Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                 <a href="#booking" class="button">Book a service today!</a>
+        </div>
+
+        <div class="right-hand">
+            <img src="Washing.jpg" alt="Laundry_washing">
+           
+        </div>
+    </main>
+
+    <section class="section-achievements">
+        <div class="service"><h1>Our Achievements</h1></div>
+        <ul class="contents">
+            
+            <li><h2>15+</h2>
+            <p>Laundry Services</p></li>
+            <li><h2>240+</h2>
+            <p>Happy Customers</p></li>
+            <li><h2>2+ Yrs</h2>
+            <p>Experiences</p></li>
+        </ul>
+    </section>
+
+    <section class="Booking-Services" id="booking">
+        <div class="left">
+            <div class="left-first">
+                <h2>Our Services</h2>
+                <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+            </div>
+            <hr>
+            <ul class="service-list">
+                <li data-id="1" data-name="Dry Cleaning" data-price="200">
+                    <div class="item-info">
+                        <span class="icon">👕</span>
+                        <span class="name">Dry Cleaning</span>
+                        <span class="price">₹200.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+        
+                <li data-id="2" data-name="Wash & Fold" data-price="100">
+                    <div class="item-info">
+                        <span class="icon">🧺</span>
+                        <span class="name">Wash & Fold</span>
+                        <span class="price">₹100.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+        
+                <li data-id="3" data-name="Ironing" data-price="30">
+                    <div class="item-info">
+                        <span class="icon">💨</span>
+                        <span class="name">Ironing</span>
+                        <span class="price">₹30.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+        
+                <li data-id="4" data-name="Stain Removal" data-price="500">
+                    <div class="item-info">
+                        <span class="icon">🍷</span>
+                        <span class="name">Stain Removal</span>
+                        <span class="price">₹500.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+        
+                <li data-id="5" data-name="Leather Cleaning" data-price="999">
+                    <div class="item-info">
+                        <span class="icon">👞</span>
+                        <span class="name">Leather & Suede Cleaning</span>
+                        <span class="price">₹999.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+        
+                <li data-id="6" data-name="Wedding Dress" data-price="2800">
+                    <div class="item-info">
+                        <span class="icon">👗</span>
+                        <span class="name">Wedding Dress Cleaning</span>
+                        <span class="price">₹2800.00</span>
+                    </div>
+                    <button class="btn-action btn-add">Add Item <ion-icon name="add-circle-outline"></ion-icon></button>
+                </li>
+            </ul>
+        
+            <hr>
+            <p class="footer-note">ⓘ Add the items to the cart and book now</p>
+        </div>
+        <div class="right">
+            <div class="part1">
+                <div class="added-items">
+                    <h3 class="item-first">Added Items</h3>
+                
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                            <tr id="empty-row">
+                                <td colspan="3"> <img src="img/info.png" alt="info">
+                                    <h5>No items added yet</h5>
+                                    <p>Add items to the cart from the services bar.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                       
+                    </table>
+                
+                
+                </div>
+
+            </div>
+           <div class="total">
+                            <strong>Total Amount:</strong>
+                            <span id="total-price">₹0</span>
+                        </div>
+           
+        <div class="part2"><div class="book-now">
+        <h3>Book Now</h3>
+        
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="John Doe" required>
+        
+        <div class="row">
+            <div class="input-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="the-email" placeholder="example@gmail.com" 
+                       pattern=".+@gmail\.com" title="Please use a @gmail.com address" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="9876543210" 
+                       pattern="[0-9]+" title="Please enter numbers only" required>
+            </div>
+        </div>
+        
+        <button class="btn-book">Book Now</button>
+        <div class="error" id="error-mssg">
+            ⓘ Add the items to the cart and book
+        </div>
+        <div class="success" id="success-mssg">
+            ✔ Confirmation email sent to <span id="display-email"></span>!
+        </div>
+    </div></div>
+
+    
+            
+        </div>
+    </section>
+  
+
+
+
+<section class="last">
+    <div class="features-section">
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/machine.png" alt="Washing Machine Icon">
+            </div>
+            <h3 class="feature-title">Premium Services</h3>
+            <p class="feature-text">Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+        </div>
+    
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/support.png" alt="Customer Support Icon">
+            </div>
+            <h3 class="feature-title">Quick Support</h3>
+            <p class="feature-text">We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+        </div>
+    
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/delivery-man.png" alt="Handing Package Icon">
+            </div>
+            <h3 class="feature-title">Hassle Free Delivery</h3>
+            <p class="feature-text">Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+        </div>
+    
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/cash-on-delivery.png" alt="Handshake with Coins Icon">
+            </div>
+            <h3 class="feature-title">Affordable Prices</h3>
+            <p class="feature-text">Experience exceptional care without breaking the bank — our affordable prices make laundry day stress-free.</p>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <h1>Subscribe to our<br>newsletter.</h1>
+        
+        <div class="right-content">
+            <div class="input-group2">
+                <input type="text" id="name" placeholder="Full name">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <button class="subs-button">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="logo2"><img src="img/logo1.png" alt="cloth-stack"></div>
+        </div>
+        <div class="footer-column">
+            
+            <h3 class="footer-subtitle">About us</h3>
+            <p class="footer-text">
+                Lorem Ipsum Dolor Sit Amet<br>
+                Consectetur. Sed At Congue.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading">Important Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading">Contact</h3>
+            <p class="footer-info">mail@site.com</p>
+            <p class="footer-info">+91 91234 56780</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
