@@ -95,7 +95,7 @@ bookBtn.addEventListener('click', () => {
         };
 
         // Send actual email
-        emailjs.send('service_wp3jx25', 'template_i7pz2gq', templateParams)
+        emailjs.send('service_7ox7w78', 'template_i7pz2gq', templateParams)
             .then(() => {
                 // SUCCESS: Show the exact message the mentor requested
                 successDisplay.innerText = "✔ Thank you For Booking the Service We will get back to you soon!";
